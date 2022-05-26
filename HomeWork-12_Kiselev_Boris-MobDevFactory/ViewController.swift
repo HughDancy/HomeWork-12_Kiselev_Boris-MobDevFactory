@@ -119,8 +119,8 @@ class ViewController: UIViewController {
     @objc func step() {
         
         if count > 0 {
-            let minutes = String(count / 60)
-            let seconds = String(count % 60)
+            let minutes = count / 60
+            let seconds = count % 60
             count -= 1
             timeLabel.text = "\(minutes) : \(seconds)"
         } else if count == 0 {
@@ -129,8 +129,8 @@ class ViewController: UIViewController {
             startWorkButton.isHidden = false
             pauseButton.isHidden = true
             count = 60
-            let minutes = String(count / 60)
-            let seconds = String(count % 60)
+            let minutes = count / 60
+            let seconds = count % 60
             timeLabel.text = "\(minutes) : \(seconds)"
             startChill()
             
@@ -164,8 +164,8 @@ class ViewController: UIViewController {
     
     @objc func secondStep() {
         if secondCount > 0 {
-            let minutes = String(secondCount / 60)
-            let seconds = String(secondCount % 60)
+            let minutes = secondCount / 60
+            let seconds = secondCount % 60
             secondCount -= 1
             secondTimeLabel.text = "\(minutes) : \(seconds)"
         } else if secondCount == 0 {
@@ -174,8 +174,8 @@ class ViewController: UIViewController {
             greenPauseButton.isHidden = true
             chillButton.isHidden = false
             secondCount = 25
-            let minutes = String(secondCount / 60)
-            let seconds = String(secondCount % 60)
+            let minutes = secondCount / 60
+            let seconds = secondCount % 60
             secondTimeLabel.text = "\(minutes) : \(seconds)"
             startWork()
             
