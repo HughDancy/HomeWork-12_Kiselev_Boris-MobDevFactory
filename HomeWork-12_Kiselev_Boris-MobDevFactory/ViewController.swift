@@ -6,13 +6,15 @@
 //
 
 import UIKit
+var count = 60
+var secondCount = 25
 
 class ViewController: UIViewController {
     
     var timer = Timer()
     var secondTimer = Timer()
-    var count = 60
-    var secondCount = 25
+//    var count = 60
+//    var secondCount = 25
     var redAncor = false
     var greenAncor = false
 
